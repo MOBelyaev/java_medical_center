@@ -15,7 +15,7 @@ public class Illness {
 
     @Id
     private String illMedName;
-    private String illCommName;
+    private String illCommonName;
 
     @OneToMany(mappedBy = "illness",fetch = FetchType.LAZY)
     private List<Diagnose> diagnoseList = new ArrayList<>();

@@ -50,7 +50,7 @@ public class DiagnoseService {
 
     }
 
-    @GetMapping
+    @GetMapping("/{diagId}")
     public DiagnoseDto read(@PathVariable UUID diagId){
 
         Optional<Diagnose> diagnose = diagnoseRepository.findById(diagId);
@@ -64,6 +64,5 @@ public class DiagnoseService {
                 .visit(diagnose.get().getVisit())
                 .illness(diagnose.get().getIllness())
                 .build();
-
     }
 }
