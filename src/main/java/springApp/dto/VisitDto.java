@@ -13,5 +13,7 @@ public class VisitDto {
     private UUID visId;
     private Instant dateVisit;
     private Instant timeVisit;
+    private UUID patId;
+    private UUID phyId;
 
 }

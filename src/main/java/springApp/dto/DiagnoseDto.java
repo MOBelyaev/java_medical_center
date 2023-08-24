@@ -2,8 +2,6 @@ package springApp.dto;
 
 import lombok.Builder;
 import lombok.Data;
-import springApp.model.Illness;
-import springApp.model.Visit;
 
 import java.util.UUID;
 
@@ -13,7 +11,7 @@ public class DiagnoseDto {
 
     private UUID diagId;
     private String degree;
-    private Visit visit;
-    private Illness illness;
+    private UUID visitId;
+    private String illMedName;
 
 }

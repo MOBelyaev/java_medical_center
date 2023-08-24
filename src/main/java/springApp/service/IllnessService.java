@@ -2,14 +2,11 @@ package springApp.service;
 
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-import springApp.dto.DiagnoseDto;
 import springApp.dto.IllnessDto;
-import springApp.model.Diagnose;
 import springApp.model.Illness;
 import springApp.repository.IllnessRepository;
 
 import javax.persistence.EntityNotFoundException;
-import java.sql.Connection;
 import java.util.Optional;
 
 @RestController
