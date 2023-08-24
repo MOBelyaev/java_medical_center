@@ -1,6 +1,5 @@
 package springApp.model;
 
-import liquibase.pro.packaged.E;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,7 +10,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Table(name = "visit")
+@Table(name = "visit", schema = "public")
 @Getter
 @Setter
 public class Visit {
